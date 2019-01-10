@@ -119,9 +119,7 @@
 
 
 
-
-
-
+<script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
 <script type="text/javascript" async="" src="./New Zealand White Clover - Cover Crop Seed _ Johnny&#39;s Selected Seeds_files/tracking.js"></script><script src="./New Zealand White Clover - Cover Crop Seed _ Johnny&#39;s Selected Seeds_files/getIds" type="text/javascript" async=""></script><script async="true" type="text/javascript" src="./New Zealand White Clover - Cover Crop Seed _ Johnny&#39;s Selected Seeds_files/event" data-owner="criteo-tag"></script><script async="" src="./New Zealand White Clover - Cover Crop Seed _ Johnny&#39;s Selected Seeds_files/analytics.js"></script><script src="./New Zealand White Clover - Cover Crop Seed _ Johnny&#39;s Selected Seeds_files/modernizr-custom.js"></script>
 
 
@@ -132,7 +130,54 @@
 
 
 
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#checkbox_1_4').click(function() {
+            if (!$(this).is(':checked')) {
+                $('#plan_1_4_cost')[0].textContent = '$3.89';
+            } else {
+                $('#plan_1_4_cost')[0].textContent = '$5.43';
+            }
+        });
+        $('#checkbox_1').click(function() {
+            if (!$(this).is(':checked')) {
+                $('#plan_1_cost')[0].textContent = '$8.19';
+            } else {
+                $('#plan_1_cost')[0].textContent = '$10.24';
+            }
+        });
+        $('#checkbox_5').click(function() {
+            if (!$(this).is(':checked')) {
+                $('#plan_5_cost')[0].textContent = '$33.67';
+            } else {
+                $('#plan_5_cost')[0].textContent = '$40.75';
+            }
+        });
+        $('#checkbox_25').click(function() {
+            if (!$(this).is(':checked')) {
+                $('#plan_25_cost')[0].textContent = '$136.50';
+            } else {
+                $('#plan_25_cost')[0].textContent = '$160.50';
+            }
+        });
+        $('#checkbox_50').click(function() {
+            if (!$(this).is(':checked')) {
+                $('#plan_50_cost')[0].textContent = '$239.50';
+            } else {
+                $('#plan_50_cost')[0].textContent = '$273.50';
+            }
+        });
+    });
+    $(document).click(function() {
+        var sum_1_4 = Number($('#plan_1_4_cost')[0].textContent.substring(1,)) * Number($('#qty_0')[0].value);
+        var sum_1 = Number($('#plan_1_cost')[0].textContent.substring(1,)) * Number($('#qty_1')[0].value);
+        var sum_5 = Number($('#plan_5_cost')[0].textContent.substring(1,)) * Number($('#qty_2')[0].value);
+        var sum_25 = Number($('#plan_25_cost')[0].textContent.substring(1,)) * Number($('#qty_3')[0].value);
+        var sum_50 = Number($('#plan_50_cost')[0].textContent.substring(1,)) * Number($('#qty_4')[0].value);
+        var total = sum_1_4 + sum_1 + sum_5 + sum_25 + sum_50;
+        $('#total')[0].textContent = '$' + String(total.toFixed(2));
+    });
+</script>
 
 
 
@@ -6749,7 +6794,7 @@ Grower's Library
 <div class="c-global-header__wrapper o-layout js-accordion__item">
 <div class="c-global-header__main o-layout">
 <div class="c-global-header__col o-layout__col o-layout__col-50">
-<a href="https://www.johnnyseeds.com/">
+<a href="./Johnny’s Selected Seeds _ Supporting Farms & Gardens Since 1973.htm">
 <img class="c-global-header__logo logo" src="./New Zealand White Clover - Cover Crop Seed _ Johnny&#39;s Selected Seeds_files/jss-logo.svg" alt="Johnny&#39;s Selected Seeds">
 </a>
 </div>
@@ -7032,9 +7077,9 @@ dw.ac._capture({id: "979.30", type: "detail"});
 <h1 class="c-product-header__heading product-name" itemprop="name">New Zealand White Clover</h1>
 
 <p class="c-product-header__subheading" itemprop="alternateName">Cover Crop Seed</p>
-</div>
 <div>
-    <p class="c-product-header__id" itemprop="alternateName" style='color: #1E90FF; font-size: 14px;'>Seed Protection Available</p>
+<p class="c-product-header__id" itemprop="alternateName" style='color: #1E90FF; font-size: 14px;'>Seed Protection Available</p>
+</div>
 </div>
 <div class="o-layout__col@ml-up o-layout__col-50@ml-up u-text-right@ml-up">
 <div class="c-product-header__id product-number">
@@ -7159,7 +7204,7 @@ Product ID: <span itemprop="productID" data-masterid="979">979</span>
 <meta content="New Zealand White Clover Clovers" itemprop="name">
 <span itemprop="author" itemscope="" itemtype="http://schema.org/Organization">
 <meta itemprop="name" content="Johnny&#39;s Selected Seeds">
-<meta itemprop="url" content="https://www.johnnyseeds.com/">
+<meta itemprop="url" content="./Johnny’s Selected Seeds _ Supporting Farms & Gardens Since 1973.htm">
 </span>
 
 <img class="c-image-gallery__main-image js-image-gallery__main-image" itemprop="contentUrl" srcset="https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw3f6ec327/images/products/farmseed/00979_01_newzealandwhiteclover.jpg?sw=774&amp;cx=302&amp;cy=0&amp;cw=1196&amp;ch=1196 774w, https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw3f6ec327/images/products/farmseed/00979_01_newzealandwhiteclover.jpg?sw=387&amp;cx=302&amp;cy=0&amp;cw=1196&amp;ch=1196 387w" sizes="(min-width: 768px) 387px, calc(100vw - 120px)" src="./New Zealand White Clover - Cover Crop Seed _ Johnny&#39;s Selected Seeds_files/00979_01_newzealandwhiteclover.jpg" alt="New Zealand White Clover Clovers" width="387" height="387">
@@ -7339,7 +7384,7 @@ Protection
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
-<span class="c-attribute-table__val c-attribute-table__val--m-bold">$5.43</span>
+<span class="c-attribute-table__val c-attribute-table__val--m-bold" id="plan_1_4_cost">$5.43</span>
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
@@ -7363,7 +7408,7 @@ Protection
 </div>
 <div class="c-attribute-table__col c-attribute-table__m-clear c-attribute-table__m-stock">
 <div class="c-attribute-table__val u-text-center">
-<input type="checkbox" name="protection_1_4_lb" value="1_4_lb" style="opacity: 1;" checked="checked">
+<input type="checkbox" id='checkbox_1_4' name="protection_1_4_lb" value="1_4_lb" style="opacity: 1;" checked="checked">
 </div>
 </div>
 
@@ -7386,7 +7431,7 @@ Protection
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
-<span class="c-attribute-table__val c-attribute-table__val--m-bold">$10.24</span>
+<span class="c-attribute-table__val c-attribute-table__val--m-bold" id="plan_1_cost">$10.24</span>
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
@@ -7411,7 +7456,7 @@ Protection
 </div>
 <div class="c-attribute-table__col c-attribute-table__m-clear c-attribute-table__m-stock">
 <div class="c-attribute-table__val u-text-center">
-<input type="checkbox" name="protection_1_lb" value="1_lb" style="opacity: 1;" checked="checked">
+<input type="checkbox" id='checkbox_1' name="protection_1_lb" value="1_lb" style="opacity: 1;" checked="checked">
 </div>
 </div>
 
@@ -7434,7 +7479,7 @@ Protection
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
-<span class="c-attribute-table__val c-attribute-table__val--m-bold">$40.75</span>
+<span class="c-attribute-table__val c-attribute-table__val--m-bold" id="plan_5_cost">$40.75</span>
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
@@ -7459,7 +7504,7 @@ Protection
 </div>
 <div class="c-attribute-table__col c-attribute-table__m-clear c-attribute-table__m-stock">
 <div class="c-attribute-table__val u-text-center">
-<input type="checkbox" name="protection_5_lb" value="5_lb" style="opacity: 1;" checked="checked">
+<input type="checkbox" id='checkbox_5' name="protection_5_lb" value="5_lb" style="opacity: 1;" checked="checked">
 </div>
 </div>
 
@@ -7482,7 +7527,7 @@ Protection
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
-<span class="c-attribute-table__val c-attribute-table__val--m-bold">$160.50</span>
+<span class="c-attribute-table__val c-attribute-table__val--m-bold" id="plan_25_cost">$160.50</span>
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
@@ -7507,7 +7552,7 @@ Protection
 </div>
 <div class="c-attribute-table__col c-attribute-table__m-clear c-attribute-table__m-stock">
 <div class="c-attribute-table__val u-text-center">
-<input type="checkbox" name="protection_25_lb" value="25_lb" style="opacity: 1;" checked="checked">
+<input type="checkbox" id='checkbox_25' name="protection_25_lb" value="25_lb" style="opacity: 1;" checked="checked">
 </div>
 </div>
 
@@ -7530,7 +7575,7 @@ Protection
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
-<span class="c-attribute-table__val c-attribute-table__val--m-bold">$273.50</span>
+<span class="c-attribute-table__val c-attribute-table__val--m-bold" id="plan_50_cost">$273.50</span>
 </div>
 
 <div class="c-attribute-table__col c-attribute-table__m-float-right">
@@ -7555,7 +7600,7 @@ Protection
 </div>
 <div class="c-attribute-table__col c-attribute-table__m-clear c-attribute-table__m-stock">
 <div class="c-attribute-table__val u-text-center">
-<input type="checkbox" name="protection_50_lb" value="50_lb" style="opacity: 1;" checked="checked">
+<input type="checkbox" id='checkbox_50' name="protection_50_lb" value="50_lb" style="opacity: 1;" checked="checked">
 </div>
 </div>
 
@@ -7596,7 +7641,11 @@ Please enter a quantity before adding to wishlist.
 </div>
 
 
-<div style='padding-top:40px; '>
+<div style='padding-top:40px;'>
+    <h2><b>Total:</b> <span id="total">$0.00</span></h2>
+</div>
+
+<div style='padding-top:20px; '>
 <button id="add-all-to-cart" class="c-button c-attribute-table__button c-attribute-table__u-show-medium-up c-arrow-tooltip" title="Select Size" value="Select Size">
 Checkout
 <div class=" c-arrow-tooltip__tip" aria-hidden="true">
@@ -7618,7 +7667,47 @@ Seed Protection
 </h2>
 </div>
 <div role="tabpanel" id="tabpanel_2-1" class="c-accordion__body s-lgc-pdp-content js-accordion__body" aria-labelledby="tabheading_2-1">
-<span style="font-weight: bold;">CULTURE:</span><span style=""> Sow the seeds at the time and rate specified in the product description. All legumes should be planted 1/4 to 1/2" deep.<br></span><span style="font-weight: bold;">FOR GREEN MANURE:</span><span style=""> For best results, till under when in the flowering stage.<br></span><span style="font-weight: bold;">SEED SPECS:</span><span style=""> Planting rates are listed within each product description. Organic systems should plant 1/3 to 1/2 heavier to allow for some weed pressures.</span>
+
+<div>
+    <img srcset="./images/blue-shield.png" width="20" height="20">&nbsp;
+    <b style="font-size: 18px">What is a Protected Seed?</b>
+</div>
+<div>
+    Protection is included in the cost of this seed. Receive instant, hassle-free reimbursement whenever catastrophe strikes. Your  account will be automatically debited if your crops are affected by catastrophic weather events.
+</div>
+<br />
+<div>
+    <img srcset="./images/blue-shield.png" width="20" height="20">&nbsp;
+    <b style="font-size: 18px">Why protect my seeds?</b>
+</div>
+<div>
+    It is the cheapest and most hassle-free way to guarantee profits from every seed. Don't worry about the unexpected and expect to be rewarded for your hard work.
+</div>
+<br />
+<div>
+    <img srcset="./images/blue-shield.png" width="20" height="20">&nbsp;
+    <b style="font-size: 18px">What do we cover?</b>
+</div>
+<div>
+    We cover unexpected drought, fire, hurricane, tornado, and flooding. The protection lasts for the lifetime of the seed (until harvest).
+</div>
+<br />
+<div>
+    <img srcset="./images/blue-shield.png" width="20" height="20">&nbsp;
+    <b style="font-size: 18px">How is it so cheap?</b>
+</div>
+<div>
+    Seed protection is not about insurance. It comes from farmers for farmers. Our customers include farmers from all across the country growing different crops with different methods in different geographies. Together, you form a cooperative network that support each other. Do away with all the red tape.
+</div>
+<br />
+<div>
+    <img srcset="./images/blue-shield.png" width="20" height="20">&nbsp;
+    <b style="font-size: 18px">How is it easy?</b>
+</div>
+<div>
+    Normally, reporting a claim takes 8 to 10 weeks for you to hear back. We don't believe that you should deal with more paperwork after a devastating storm. So, our payments are <b>automatic</b>. For example, if we detect that there has been less than 1 inch of rain in the last 90 days in California, you automatically get paid. No questions asked.
+</div>
+<br />
 </div>
 </div>
 
