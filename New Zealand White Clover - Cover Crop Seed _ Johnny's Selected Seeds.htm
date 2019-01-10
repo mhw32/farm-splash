@@ -132,6 +132,7 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
+        $('#message').hide();
         $('#checkbox_1_4').click(function() {
             if (!$(this).is(':checked')) {
                 $('#plan_1_4_cost')[0].textContent = '$3.89';
@@ -166,6 +167,9 @@
             } else {
                 $('#plan_50_cost')[0].textContent = '$273.50';
             }
+        });
+        $('#add-all-to-cart').click(function() {
+            $('#message').show();
         });
     });
     $(document).click(function() {
@@ -7655,6 +7659,30 @@ Checkout
 Please enter a quantity before adding to cart.
 </div>
 </button>
+</div>
+
+<div id="message" style='margin-top: 30px; padding: 20px; background-color: #f2f2f2; border-radius: 8px;'>
+    <div style='text-align: center;'>
+        <h2 style='font-size: 26px'>Thank you for purchasing from Johnny's Seeds.</h2>
+        <p style='font-size: 16px; text-align: left;'>
+            We aim to be different than just a business. We are a nationwide network of farmers for farmers. For every protected seed purchased, a portion of the revenue goes to a cooperative fund to help you recover from an unexpected disaster. Thank you for your commitment and welcome to a new community of farmers.
+        </p>
+        <h2>Meet farmers in our cooperative!</h2>
+        <div>
+            <img srcset="./farmer1.png" width="100" height="100">
+            <p style='font-size: 16px;'><b>John</b> from San Diego, CA</p>
+            <p style='text-align: left;'>
+                John has owned his farm in California for 14 years. His corn is said to be the "best of the west". Last year, the drought hit his crops especially hard. John was facing bankruptcy. Luckily, he purchased his protected seeds, which comes with 100% seasonal insurance on each seed. John was able to take his time to recuperate. Last year was John’s biggest crop yield ever.
+            </p>
+        </div>
+        <div>
+            <img srcset="./farmer2.png" width="100" height="100">
+            <p style='font-size: 16px;'><b>Tyler</b> from San Antonio, TX</p>
+            <p style='text-align: left;'>
+                This time is wasn’t drought, it was a tornado, and it caught Tyler’s wheat off guard, destroying 50% of his entire field. With seed protection, Tyler was able to purchase new seeds and make a profit before the season ended.
+            </p>
+        </div>
+    </div>
 </div>
 
 
