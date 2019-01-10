@@ -175,7 +175,10 @@
         var sum_25 = Number($('#plan_25_cost')[0].textContent.substring(1,)) * Number($('#qty_3')[0].value);
         var sum_50 = Number($('#plan_50_cost')[0].textContent.substring(1,)) * Number($('#qty_4')[0].value);
         var total = sum_1_4 + sum_1 + sum_5 + sum_25 + sum_50;
-        $('#total')[0].textContent = '$' + String(total.toFixed(2));
+        var loss = (sum_1_4 * 0.25 + sum_1 * 1 + sum_5 * 5 + sum_25 * 25 + sum_50 * 50) * 10;
+
+        $('#total')[0].textContent = '$' + String(total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));
+        $('#calculation')[0].textContent = '$' + String(loss.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));
     });
 </script>
 
@@ -7706,6 +7709,14 @@ Seed Protection
 </div>
 <div>
     Normally, reporting a claim takes 8 to 10 weeks for you to hear back. We don't believe that you should deal with more paperwork after a devastating storm. So, our payments are <b>automatic</b>. For example, if we detect that there has been less than 1 inch of rain in the last 90 days in California, you automatically get paid. No questions asked.
+</div>
+<br />
+<div>
+    <img srcset="./images/blue-shield.png" width="20" height="20">&nbsp;
+    <b style="font-size: 18px">How much would I save?</b>
+</div>
+<div>
+    Based on your cart, if all the seeds perished, you would have to pay <span style='color: red; font-size: 18px;' id='calculation'>$0.00</span> without protection.
 </div>
 <br />
 </div>
